@@ -1,0 +1,101 @@
+{
+  "cli": {
+    "version": ">= 0.38.3"
+  },
+  "build": {
+    "base": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk",
+        "resourceClass": "default"
+      },
+      "ios": {
+        "resourceClass": "default"
+      }
+    },
+    "dev": {
+      "extends": "base",
+      "developmentClient": true,
+      "channel": "dev"
+    },
+    "dev-simulator": {
+      "extends": "dev",
+      "ios": {
+        "simulator": true
+      }
+    },
+    "preview": {
+      "extends": "base",
+      "channel": "preview"
+    },
+    "preview-simulator": {
+      "extends": "preview",
+      "ios": {
+        "simulator": true
+      }
+    },
+    "qa": {
+      "extends": "base",
+      "distribution": "store",
+      "channel": "qa",
+      "env": {
+        "APP_VARIANT": "qa"
+      }
+    },
+    "qa-simulator": {
+      "extends": "qa",
+      "developmentClient": true,
+      "ios": {
+        "simulator": true
+      }
+    },
+    "qa-internal": {
+      "extends": "qa",
+      "distribution": "internal"
+    },
+    "production": {
+      "extends": "base",
+      "distribution": "store",
+      "channel": "production",
+      "android": {
+        "buildType": "app-bundle"
+      }
+    },
+    "production-internal": {
+      "extends": "production",
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      }
+    }
+  },
+  "submit": {
+    "dev": {
+      "ios": {
+        "ascAppId": "1611328111",
+        "appleTeamId": "3C8L4YL3S8"
+      }
+    },
+    "preview": {
+      "ios": {
+        "ascAppId": "6446080985",
+        "appleTeamId": "3C8L4YL3S8"
+      }
+    },
+    "qa": {
+      "ios": {
+        "ascAppId": "1605475265",
+        "appleTeamId": "3C8L4YL3S8"
+      }
+    },
+    "production": {
+      "android": {
+        "track": "internal"
+      },
+      "ios": {
+        "ascAppId": "1604778649",
+        "appleTeamId": "3C8L4YL3S8"
+      }
+    }
+  }
+}

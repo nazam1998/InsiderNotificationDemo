@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "270845578854",
+    "project_id": "fiery-marking-325418",
+    "storage_bucket": "fiery-marking-325418.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270845578854:android:63c19cb30045d25a5be7a7",
+        "android_client_info": {
+          "package_name": "com.shopraha.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270845578854-uae0h6ft1epp5abgedmb6maet7ocplae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTsvsvNtzWSZBJRFmbmaxXTWWH3ISA2s4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "270845578854-uae0h6ft1epp5abgedmb6maet7ocplae.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "270845578854-77670jlhg43527hmn9rce1e8gdil0sgt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.shopraha.ios"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
